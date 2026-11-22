@@ -1,0 +1,423 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aksa Kahve Köşesi</title>
+
+<style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: 'Segoe UI', sans-serif;
+
+    background: #f4f6fa;
+
+    color: #172b4d;
+
+}
+
+/* ÜST MENÜ */
+
+header {
+
+    background: #101f40;
+
+    color: white;
+
+    padding: 25px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-size: 15px;
+
+}
+
+/* ANA BAŞLIK */
+
+.hero {
+
+    min-height: 520px;
+
+    background: linear-gradient(
+
+        rgba(12, 29, 61, 0.78),
+
+        rgba(12, 29, 61, 0.78)
+
+    ), url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600")
+
+    center/cover;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 40px 20px;
+
+}
+
+.hero h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.hero {
+
+    min-height: 520px;
+
+    background: #101f40;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 40px 20px;
+
+}
+
+.about h2 {
+
+    font-size: 32px;
+
+    color: #14294f;
+
+    margin-bottom: 20px;
+
+}
+
+.about p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+    color: #53627a;
+
+    font-size: 17px;
+
+}
+
+/* MENÜ */
+
+.menu {
+
+    padding: 65px 8%;
+
+    background: #e8edf5;
+
+    text-align: center;
+
+}
+
+.menu h2 {
+
+    font-size: 34px;
+
+    margin-bottom: 40px;
+
+    color: #14294f;
+
+}
+
+.coffee-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+.coffee-card {
+
+    background: white;
+
+    width: 280px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(15,35,70,0.12);
+
+    transition: 0.3s;
+
+}
+
+.coffee-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.coffee-card img {
+
+    width: 100%;
+
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+}
+
+.coffee-card h3 {
+
+    color: #14294f;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+.coffee-card p {
+
+    color: #65738b;
+
+    margin-bottom: 15px;
+
+}
+
+.price {
+
+    font-size: 23px;
+
+    color: #315d9c;
+
+    font-weight: bold;
+
+}
+
+/* ALT KISIM */
+
+footer {
+
+    background: #101f40;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 28px;
+
+}
+
+footer p {
+
+    font-size: 14px;
+
+}
+
+@media(max-width: 650px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+    }
+
+    nav a {
+
+        margin: 0 8px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 34px;
+
+    }
+
+    .coffee-card {
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">☕ AKSA KAHVE KÖŞESİ</div>
+
+    <nav>
+
+        <a href="#about">Biz Kimiz?</a>
+
+        <a href="#menu">Menü</a>
+
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div>
+
+        <h1>Ders Arasında Lezzetli Bir Mola!</h1>
+
+        <p>Bir fincan kahve, biraz mutluluk ve bolca enerji...</p>
+
+        <a href="#menu" class="btn">Menüyü Gör</a>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>Biz Kimiz?</h2>
+
+    <p>
+
+        Aksa Kahve Köşesi olarak yoğun ders temposuna
+
+        lezzetli bir mola vermeniz için buradayız.
+
+        Sıcacık kahvelerimiz, samimi ortamımız ve
+
+        güzel sohbetlerimizle gününüze küçük bir
+
+        mutluluk katıyoruz. Çünkü her güzel gün
+
+        bir fincan kahveyle başlar!
+
+    </p>
+
+</section>
+
+<section class="menu" id="menu">
+
+    <h2>☕ Kahve Menümüz</h2>
+
+    <div class="coffee-container">
+
+        <div class="coffee-card">
+
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" alt="Türk kahvesi">
+
+            <h3>Türk Kahvesi</h3>
+
+            <p>Geleneksel, bol köpüklü ve enfes.</p>
+
+            <div class="price">60 TL</div>
+
+        </div>
+
+        <div class="coffee-card">
+
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600" alt="Latte">
+
+            <h3>Latte</h3>
+
+            <p>Süt ve kahvenin mükemmel uyumu.</p>
+
+            <div class="price">90 TL</div>
+
+        </div>
+
+        <div class="coffee-card">
+
+            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600" alt="Americano">
+
+            <h3>Americano</h3>
+
+            <p>Yoğun aromalı, sade kahve keyfi.</p>
+
+            <div class="price">75 TL</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Aksa Kahve Köşesi | Bir kahve molası her şeye değer! ☕</p>
+
+</footer>
+
+</body>
+
+</html>
